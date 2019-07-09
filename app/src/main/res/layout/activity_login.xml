@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/colorPrimaryDark">
+
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/imvTick"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/tick"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edit_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="@string/user_name"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:backgroundTint="#fff"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:backgroundTint="#fff"/>
+
+    <com.dx.dxloadingbutton.lib.LoadingButton
+        android:id="@+id/loading_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:minHeight="48dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:lb_btnText ="@string/button_text"
+        app:lb_min_height="48dp"
+        app:lb_btnColor="@color/colorAccent"
+        />
+
+</LinearLayout>
+
+    <View
+            android:id="@+id/animate_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:visibility="invisible"
+            />
+
+
+</FrameLayout>
